@@ -1,8 +1,6 @@
 # 🎬 Redux Saga
 
-<!-- [![Build & Deploy](https://github.com/dm-morozov/netology_76_react-redux-saga/actions/workflows/web.yaml/badge.svg)](https://github.com/dm-morozov/netology_76_react-redux-saga/actions/workflows/web.yaml) -->
-
----
+[![Build & Deploy](https://github.com/dm-morozov/netology_76_react-redux-saga/actions/workflows/web.yaml/badge.svg)](https://github.com/dm-morozov/netology_76_react-redux-saga/actions/workflows/web.yaml)
 
 ---
 
