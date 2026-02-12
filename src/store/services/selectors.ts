@@ -11,7 +11,7 @@ interface RootState {
 }
 
 // Базовые селекторы уровней
-export const selectSevicesList = (state: RootState) => {
+export const selectServicesList = (state: RootState) => {
   return state.services.list
 }
 
