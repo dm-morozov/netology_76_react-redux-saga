@@ -7,7 +7,7 @@
 ## Демо
 
 - Frontend (GitHub Pages): https://dm-morozov.github.io/netology_76_react-redux-saga/
-- Backend (Render): https://netology-76-react-redux-saga.onrender.com/
+- Backend (Render): https://netology-76-react-redux-saga.onrender.com/api/services/
 
 ## Задача
 
