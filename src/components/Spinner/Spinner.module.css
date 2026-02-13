@@ -1,6 +1,7 @@
 .spinnerWrap {
   display: flex;
   justify-content: center;
+  min-height: 140px;
 }
 
 .spinner {

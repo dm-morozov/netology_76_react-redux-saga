@@ -17,16 +17,26 @@ const ServiceDetailsPage = () => {
   const loading = useAppSelector(selectServiceDetailsLoading)
   const error = useAppSelector(selectServiceDetailsError)
 
-  const nomericId = Number(id)
+  const numericId = Number(id)
 
   useEffect(() => {
-    if (Number.isNaN(nomericId)) return
-    dispatch(detailsRequested(nomericId))
-  }, [dispatch, nomericId])
+    if (Number.isNaN(numericId)) return
+    dispatch(detailsRequested(numericId))
+  }, [dispatch, numericId])
 
   const handleRetry = () => {
-    if (Number.isNaN(nomericId)) return
-    dispatch(detailsRequested(nomericId))
+    if (Number.isNaN(numericId)) return
+    dispatch(detailsRequested(numericId))
+  }
+
+  // если ввести условно http://localhost:5173/asdf/details — NaN, то такую ошибку мы обработали
+  if (Number.isNaN(numericId)) {
+    return (
+      <div>
+        <p>Некорректный id услуги</p>
+        <Link to="/">Обратно к списку</Link>
+      </div>
+    )
   }
 
   if (loading) return <Spinner />
