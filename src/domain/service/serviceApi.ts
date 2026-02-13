@@ -4,7 +4,8 @@
 
 import type { ServiceDetails, ServiceListItem } from './types'
 
-const API_BASE_URL = 'http://localhost:7070/api/services'
+const API_BASE_URL =
+  import.meta.env.VITE_API_BASE_URL ?? 'http://localhost:7070/api/services'
 
 // Так как запросы у нас повторяются, вынесем в отдельную функцию использую дженерик T
 const requestJson = async <T>(url: string): Promise<T> => {
