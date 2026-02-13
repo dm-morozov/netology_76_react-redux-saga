@@ -4,11 +4,7 @@
 // Компоненты читают состояние через селекторы
 // Если структура state поменяется, правим селекторы, UI почти не трогаем
 
-import type { ServicesState } from '../../domain/service/types'
-
-interface RootState {
-  services: ServicesState
-}
+import type { RootState } from '../../app/store'
 
 // Базовые селекторы уровней
 export const selectServicesList = (state: RootState) => {
